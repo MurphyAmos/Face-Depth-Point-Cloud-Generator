@@ -1,4 +1,4 @@
-# Face-Depth Based Point Cloud Generator
+# Face-Depth Point Cloud Generator
 
 Detects faces in video, estimates depth for each face, generates point clouds from face depth data, and overlays the depth heatmap back onto the original video.
 
