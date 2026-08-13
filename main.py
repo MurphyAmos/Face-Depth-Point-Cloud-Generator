@@ -130,7 +130,7 @@ alpha = 0.6
 #count and FC will be used to implement frame skipping 
 count = 0
 fc = 4
-cap = cv2.VideoCapture("YTDown.com_Shorts_John-cena-bing-chilling-ORIGINAL-1080p_Media_HWQqabCkAjU_001_480p.mp4")
+cap = cv2.VideoCapture("{VIDEO FILE PATH}")
 #this is ratio for final video output fps... it keeps the same relative "fps" vs the available frames
 source_fps = cap.get(cv2.CAP_PROP_FPS)/fc
 if not cap.isOpened():
