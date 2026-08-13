@@ -12,12 +12,6 @@ from transformers import pipeline
 device = Accelerator().device
 os.environ["HF_TOKEN"] = os.environ.get("HF_TOKEN")
 
-pipe = pipeline(
-    "depth-estimation",
-    device = -1,
-    model="depth-anything/Depth-Anything-V2-Small-hf",
-)
-
 previous_depths = {}
 test= False
 def find_depth(found_object,face_id):
@@ -158,7 +152,6 @@ width = int(src_width * scale)
 height = int(src_height * scale)
 
 video = cv2.VideoWriter("test.mp4", cv2.VideoWriter_fourcc(*'mp4v'), source_fps, (width, height))
-
 
 success = True
 while success:
